@@ -1,3 +1,5 @@
+/* RESET BÁSICO */
+
 body{
 margin:0;
 font-family:system-ui;
@@ -7,6 +9,9 @@ color:white;
 background-image:url("assets/bg_red_grid.svg");
 background-size:40px 40px;
 }
+
+
+/* NAVBAR */
 
 .navbar{
 display:flex;
@@ -20,11 +25,20 @@ backdrop-filter:blur(6px);
 
 position:sticky;
 top:0;
+
+z-index:20;
+}
+
+.nav-logo{
+position:absolute;
+left:50%;
+transform:translateX(-50%);
 }
 
 .nav-logo img{
 height:40px;
 }
+
 
 /* HERO */
 
@@ -119,7 +133,7 @@ box-shadow:0 0 20px rgba(139,0,0,0.5);
 }
 
 
-/* LOG / BLOG */
+/* LOGS */
 
 .log{
 background:#111;
@@ -155,12 +169,19 @@ background:#111;
 
 padding-top:80px;
 
-transition:0.3s;
+transition:0.35s ease;
+
+z-index:10;
+}
+
+#sidebar.open{
+left:0;
 }
 
 #sidebar ul{
 list-style:none;
 padding:0;
+margin:0;
 }
 
 #sidebar li{
@@ -173,21 +194,9 @@ background:#222;
 }
 
 
-/* MODO CLARO */
-
-.light{
-background:#F5F5F5;
-color:#111;
-}
-
-.light .card{
-background:white;
-}
-
-<button class="close-btn" onclick="toggleMenu()">✖</button>
+/* BOTÃO FECHAR */
 
 .close-btn{
-
 position:absolute;
 
 top:15px;
@@ -198,22 +207,17 @@ border:none;
 
 color:white;
 
-font-size:20px;
+font-size:22px;
 
 cursor:pointer;
-
 }
 
 
-.light .log{
-background:white;
-}
-
-/* OVERLAY (escurece fundo) */
+/* OVERLAY */
 
 #overlay{
-
 position:fixed;
+
 top:0;
 left:0;
 
@@ -228,7 +232,6 @@ pointer-events:none;
 transition:0.3s;
 
 z-index:5;
-
 }
 
 #overlay.active{
@@ -237,43 +240,20 @@ pointer-events:auto;
 }
 
 
-/* SIDEBAR MAIS SUAVE */
+/* MODO CLARO */
 
-#sidebar{
-z-index:10;
-transition:0.35s ease;
+.light{
+background:#F5F5F5;
+color:#111;
+}
+
+.light .card{
+background:white;
+}
+
+.light .log{
+background:white;
 }
 
 
-/* BOTÃO FECHAR */
-
-.close-btn{
-
-position:absolute;
-top:15px;
-right:15px;
-
-background:none;
-border:none;
-
-color:white;
-
-font-size:22px;
-
-cursor:pointer;
-
-}
-
-
-/* LOGO MAIS CENTRALIZADA */
-
-.navbar{
-position:relative;
-}
-
-.nav-logo{
-position:absolute;
-left:50%;
-transform:translateX(-50%);
-}
 
