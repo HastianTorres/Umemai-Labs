@@ -180,21 +180,25 @@ border-top:1px solid #222;
 
 
 /* SIDEBAR */
+
 #sidebar{
 position:fixed;
+
 left:-220px;
-top:0;
+top:60px;
 
 width:220px;
-height:100%;
+height:calc(100% - 60px);
 
 background:#111;
 
-padding-top:80px;
+padding-top:20px;
 
 transition:0.35s ease;
 
 z-index:50;
+
+box-shadow:5px 0 20px rgba(0,0,0,0.5);
 }
 
 /* LINKS DO MENU */
