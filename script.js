@@ -7,14 +7,3 @@ menu.classList.toggle("open")
 overlay.classList.toggle("active")
 
 }
-
-
-// MODO CLARO
-
-const themeButton = document.getElementById("themeToggle")
-
-themeButton.addEventListener("click", function(){
-
-document.body.classList.toggle("light")
-
-})
