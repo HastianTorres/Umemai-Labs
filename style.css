@@ -184,6 +184,27 @@ color:#111;
 background:white;
 }
 
+<button class="close-btn" onclick="toggleMenu()">✖</button>
+
+.close-btn{
+
+position:absolute;
+
+top:15px;
+right:15px;
+
+background:none;
+border:none;
+
+color:white;
+
+font-size:20px;
+
+cursor:pointer;
+
+}
+
+
 .light .log{
 background:white;
 }
