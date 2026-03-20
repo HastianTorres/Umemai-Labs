@@ -164,5 +164,7 @@ pointer-events:auto;
 background-color:#F5F5F5;
 color:#111;
 
-background-image:none;
+background-image:url("assets/bg_red_grid.svg");
+background-size:40px 40px;
+opacity:0.1;
 }
