@@ -2,14 +2,12 @@
 <html lang="pt-BR">
 
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Umemai Labs - UL</title>
 
 <link rel="stylesheet" href="./style.css">
-
 </head>
 
 <body>
@@ -17,25 +15,22 @@
 <header class="navbar">
 
 <div class="nav-left" onclick="toggleMenu()">
-<div id="overlay" onclick="toggleMenu()"></div>
 ☰
 </div>
 
 <div class="nav-logo">
-<img src="assets/logo.png" class="logo-img">
+<img src="assets/logo.png" class="logo-img" alt="Logo Umemai Labs">
 <span class="logo-text">Umemai Labs</span>
 </div>
 
 <div class="nav-right">
-
 <div class="user">👤</div>
 <button id="themeToggle">🌙</button>
-
 </div>
 
 </header>
 
-
+<!-- SIDEBAR -->
 <nav id="sidebar">
 
 <button class="close-btn" onclick="toggleMenu()">✖</button>
@@ -50,10 +45,11 @@
 
 </nav>
 
-
+<!-- OVERLAY (IMPORTANTE: só um!) -->
 <div id="overlay" onclick="toggleMenu()"></div>
 
 
+<!-- HERO -->
 <section class="hero">
 
 <img src="assets/logo.png" class="hero-logo" alt="Logo Umemai Labs">
@@ -61,7 +57,7 @@
 <h1>Umemai Labs - UL</h1>
 
 <p>
-site em construção, adamento dia 19/03/2026
+Site em construção • Atualizado em 19/03/2026
 </p>
 
 <a class="primary-btn" href="#experiments">Explorar Experimentos</a>
@@ -69,6 +65,7 @@ site em construção, adamento dia 19/03/2026
 </section>
 
 
+<!-- EXPERIMENTOS -->
 <section class="section" id="experiments">
 
 <h2>Active Experiments</h2>
@@ -76,27 +73,18 @@ site em construção, adamento dia 19/03/2026
 <div class="grid">
 
 <div class="card">
-
 <h3>Password Tool</h3>
-
 <p>Gerador simples de senhas para testes.</p>
-
 </div>
 
 <div class="card">
-
 <h3>CSS Playground</h3>
-
 <p>Experimentos com animações e layouts.</p>
-
 </div>
 
 <div class="card">
-
 <h3>AI Prompt Lab</h3>
-
 <p>Ferramentas e estudos com IA.</p>
-
 </div>
 
 </div>
@@ -104,38 +92,31 @@ site em construção, adamento dia 19/03/2026
 </section>
 
 
+<!-- LOGS -->
 <section class="section" id="logs">
 
 <h2>Experiment Logs</h2>
 
 <div class="log">
-
 <strong>Experiment Log #01</strong><br>
 Criação do site da Umemai Labs.
-
 </div>
 
 <div class="log">
-
 <strong>Experiment Log #02</strong><br>
 Hospedando o site gratuitamente.
-
 </div>
 
 </section>
 
 
+<!-- FOOTER -->
 <footer>
-
 <p>© 2026 Umemai Labs</p>
-
 </footer>
 
 
 <script src="./script.js" defer></script>
 
 </body>
-
 </html>
-
-
