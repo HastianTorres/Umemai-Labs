@@ -209,6 +209,12 @@ z-index:50;
 box-shadow:5px 0 20px rgba(0,0,0,0.5);
 }
 
+#sidebar ul{
+list-style:none;
+padding:0;
+margin:0;
+}
+
 #sidebar.open{
 left:0;
 }
@@ -248,7 +254,11 @@ cursor:pointer;
 /* OVERLAY */
 
 #overlay{
-z-index:90;
+z-index:8;
+}
+
+#sidebar{
+z-index:10;
 }
 
 
