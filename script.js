@@ -11,7 +11,11 @@ overlay.classList.toggle("active")
 
 // 🌙 MODO CLARO / ESCURO
 
+document.addEventListener("DOMContentLoaded", function(){
+
 const themeButton = document.getElementById("themeToggle")
+
+if(themeButton){
 
 themeButton.addEventListener("click", function(){
 
@@ -24,4 +28,7 @@ themeButton.textContent = "🌙"
 }
 
 })
+
+}
+
 })
