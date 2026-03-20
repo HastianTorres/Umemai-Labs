@@ -7,6 +7,7 @@ color:white;
 
 background-image:url("assets/bg_red_grid.svg");
 background-size:40px 40px;
+transition:0.3s;
 }
 
 /* NAVBAR */
@@ -56,7 +57,10 @@ padding:8px 14px;
 border-radius:20px;
 color:white;
 cursor:pointer;
+transition:0.2s;
 }
+
+#themeToggle:hover
 
 /* HERO */
 .hero{
@@ -81,6 +85,12 @@ background:#8B0000;
 border-radius:6px;
 color:white;
 text-decoration:none;
+transition:0.2s;
+}
+
+.primary-btn:hover{
+transform:scale(1.05);
+box-shadow:0 0 15px rgba(255,0,0,0.5);
 }
 
 /* GRID */
@@ -96,6 +106,12 @@ background:#111;
 padding:30px;
 border-radius:10px;
 border:1px solid #222;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+box-shadow:0 0 20px rgba(139,0,0,0.5);
 }
 
 /* SIDEBAR */
@@ -109,6 +125,7 @@ background:#111;
 padding-top:80px;
 transition:0.35s ease;
 z-index:50;
+box-shadow:5px 0 20px rgba(0,0,0,0.5);
 }
 
 #sidebar.open{
@@ -126,7 +143,10 @@ color:white;
 text-decoration:none;
 display:block;
 padding:15px 30px;
+transition:0.2s;
 }
+
+#sidebar a:hover
 
 /* BOTÃO FECHAR */
 .close-btn{
@@ -164,5 +184,26 @@ pointer-events:auto;
 background-color:#F5F5F5;
 color:#111;
 
-background-image:url("assets/bg_light_grid.svg");
+/* remove a grade escura */
+background-image:none;
+}
+
+/* ELEMENTOS NO MODO CLARO */
+.light .card{
+background:white;
+border:1px solid #ddd;
+}
+
+.light #sidebar{
+background:#fff;
+}
+
+.light #sidebar a{
+color:#111;
+}
+
+.light #sidebar a:hover
+
+.light .navbar{
+background:rgba(200,200,200,0.9);
 }
