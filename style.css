@@ -1,8 +1,10 @@
 body{
 margin:0;
 font-family:system-ui;
-background:#0B0B0B;
+
+background-color:#0B0B0B;
 color:white;
+
 background-image:url("assets/bg_red_grid.svg");
 background-size:40px 40px;
 }
@@ -159,6 +161,6 @@ pointer-events:auto;
 
 /* MODO CLARO */
 .light{
-background:#F5F5F5;
+background-color:#F5F5F5;
 color:#111;
 }
