@@ -20,7 +20,17 @@ h1 {
 
 /* Cada log */
 .log {
-  box-shadow: 0 0 10px rgba(255, 0, 60, 0.2);
+
+  background-color: #111;
+
+  padding: 20px;
+
+  border-left: 4px solid red;
+
+  border-radius: 5px;
+
+  transition: 0.2s;
+
 }
 
 /* Efeito ao passar o mouse */
